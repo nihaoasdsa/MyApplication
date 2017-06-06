@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_shui_yin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.text.myapplication.activity.CameraActivity">
+
+    <SurfaceView
+        android:id="@+id/id_area_sv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="拍照区域" />
+
+    <LinearLayout
+        android:id="@+id/l"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/selector_add"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/camera_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="完成"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/id_process_btns_ll"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignTop="@id/id_area_sv"
+        android:background="@drawable/touming"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <Button
+            android:id="@+id/id_switch_camera_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="切换前后摄像头"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/camera_back"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:padding="5dp"
+            android:src="@drawable/selector_back" />
+
+        <Button
+            android:id="@+id/id_capture_btn"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/selector_camera"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/id_capture_btn2"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_camera2"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:visibility="gone" />
+    </RelativeLayout>
+</RelativeLayout>

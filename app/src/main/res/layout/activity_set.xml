@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_set"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#1a000000"
+    tools:context="com.example.text.myapplication.activity.SetActivity">
+    <LinearLayout
+        android:id="@+id/l"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="#29CBCB"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/i_return"
+            android:layout_gravity="center"
+            android:layout_width="40dp"
+            android:padding="5dp"
+            android:layout_height="40dp"
+            android:src="@drawable/selector_back"/>
+        <TextView
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置"/>
+    </LinearLayout>
+        <LinearLayout
+            android:background="#F4F5F9"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:textColor="#6C6C6C"
+                android:visibility="gone"
+                android:id="@+id/name2"
+                android:gravity="center|left"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="10dp"
+                android:background="#fff"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="姓名"/>
+            <EditText
+                android:id="@+id/name"
+                android:textSize="18sp"
+                android:paddingLeft="10dp"
+                android:background="#fff"
+                android:textColorHint="#ccc"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="姓名:"/>
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#fff"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="作业类别:" />
+
+                <Spinner
+                    android:layout_weight="1"
+                    android:id="@+id/job_class"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#fff"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:textColor="#6C6C6C"
+                    android:paddingLeft="10dp"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="图片尺寸:"
+                    android:id="@+id/textView" />
+
+                <Spinner
+                    android:layout_weight="1"
+                    android:id="@+id/photo_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <EditText
+                android:visibility="gone"
+                android:id="@+id/coordinates"
+                android:textSize="18sp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="10dp"
+                android:background="#fff"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="坐标起始序号:"/>
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#fff"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="是否允许全部删除:" />
+
+                <Spinner
+                    android:layout_weight="1"
+                    android:id="@+id/all_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <RelativeLayout
+                android:id="@+id/csv"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_selector_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center">
+            <TextView
+                android:textColor="#6C6C6C"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center|left"
+                android:textSize="18sp"
+                android:paddingLeft="10dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="生成CSV文件"/>
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/right"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/csv2"
+                android:background="@drawable/bg_selector_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:textColor="#6C6C6C"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center|left"
+                    android:textSize="18sp"
+                    android:paddingLeft="10dp"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:text="导入CSV文件"/>
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/right"/>
+            </RelativeLayout>
+
+            <TextView
+                android:visibility="gone"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center|left"
+                android:id="@+id/recover"
+                android:textSize="18sp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="10dp"
+                android:background="@drawable/bg_selector_list"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="恢复默认值"
+                />
+
+        </LinearLayout>
+    <LinearLayout
+        android:id="@+id/complete"
+        android:background="@drawable/selector_add"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+
+            android:text="完成"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff" />
+    </LinearLayout>
+</LinearLayout>
